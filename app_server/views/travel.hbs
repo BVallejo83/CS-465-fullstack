@@ -1,0 +1,13 @@
+<a href="/">Home</a> | <a href="/travel">Travel</a>
+
+<hr>
+
+<h1>{{title}}</h1>
+
+{{#each trips}}
+<div>
+    <h2>{{this.name}}</h2>
+    <p>{{this.description}}</p>
+</div>
+
+{{/each}}
