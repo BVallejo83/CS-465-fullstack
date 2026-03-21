@@ -1,13 +1,28 @@
-<a href="/">Home</a> | <a href="/travel">Travel</a>
+<!DOCTYPE html>
+<!--Website template -->
 
-<hr>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{{title}}</title>
+        <link rel="stylesheet" href="/css/style.css" type="text/css">
+    </head>
 
-<h1>{{title}}</h1>
+    <body>
 
-{{#each trips}}
-<div>
-    <h2>{{this.name}}</h2>
-    <p>{{this.description}}</p>
-</div>
+        <h1>Travlr Getaways</h1>
 
-{{/each}}
+        <nav>
+            <a href="/">Home</a> |
+            <a href="/travel">Travel</a>
+        </nav>
+
+        <hr>
+
+        {{#each trips}}
+        <h2>{{name}}</h2>
+        <p>{{description}}</p>
+        {{/each}}
+
+    </body>
+</html>
