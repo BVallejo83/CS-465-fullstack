@@ -17,8 +17,10 @@ app.use(express.static(path.join(__dirname, 'public')));
 // routes
 const indexRouter = require('./app_server/routes/index');
 const travelRouter = require('./app_server/routes/travel');
+const apiRouter = require('./app_api/routes/index');
 app.use('/', indexRouter);
 app.use('/travel', travelRouter);
+app.use('/api', apiRouter);
 
 // start server
 app.listen(port, () => {
