@@ -1,0 +1,41 @@
+<div style="text-align: right;">
+    <button (click)="logout()">Logout</button>
+</div>
+<h2>Add New Trip</h2>
+
+<form (ngSubmit)="onSubmit()">
+    <input type="text" placeholder="Name" [(ngModel)]="newTrip.name"  name="name" required><br>
+
+    <input type="text" placeholder="Description" [(ngModel)]="newTrip.description" name="description" requried><br>
+
+    <input type="number" placeholder="Length (days)" [(ngModel)]="newTrip.length" name="length" required><br>
+
+    <input type="date" [(ngModel)]="newTrip.start" name="start" required><br>
+
+    <input type="text" placeholder="Resort" [(ngModel)]="newTrip.resort" name="resort" required><br>
+
+    <input type="number" placeholder="Price" [(ngModel)]="newTrip.perPerson" name="perPerson" required><br>
+
+    <input type="text" placeholder="Image" [(ngModel)]="newTrip.image" name="image" required><br>
+
+    <button type="submit">{{ isEditing ? 'Update Trip' : 'Add Trip' }}</button>
+    
+</form>
+
+<h2>Available Trips</h2>
+
+<ul>
+    <li *ngFor="let trip of trips">
+        <h3>{{ trip.name }}</h3>
+        <p>{{ trip.description }}</p>
+        <p><strong>Length:</strong> {{ trip.length }}</p>
+        <p><strong>Start:</strong> {{ trip.start }}</p>
+        <p><strong>Resort:</strong> {{ trip.resort }}</p>
+        <p><strong>Price:</strong> ${{ trip.perPerson }}</p>
+        <button (click)="editTrip(trip)">Edit</button>
+        <button (click)="deleteTrip(trip._id)">Delete</button>
+        
+        <hr>
+    </li>
+</ul>
+

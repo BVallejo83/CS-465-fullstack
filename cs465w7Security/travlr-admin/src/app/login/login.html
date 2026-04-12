@@ -1,0 +1,31 @@
+<div class="login-container">
+    <h2> Admin Login</h2>
+
+    <form (ngSubmit)="onLogin()">
+        <div>
+            <label for="username">Username</label><br>
+            <input
+                type="text"
+                id="username"
+                name="username"
+                [(ngModel)]="username"
+                required>
+        </div>
+
+        <br>
+
+        <div>
+            <label for="password">Password</label><br>
+            <input
+                type="password"
+                id="password"
+                name="password"
+                [(ngModel)]="password"
+                required>
+        </div>
+
+        <br>
+
+        <button type="submit">Login</button>
+    </form>
+    </div>

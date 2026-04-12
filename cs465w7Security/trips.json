@@ -1,0 +1,32 @@
+[
+    {
+        "code": "IT01",
+        "name": "Italy",
+        "length": "7 days",
+        "start": "2026-06-15",
+        "resort": "Rome Grand Hotel",
+        "perPerson": "2499",
+        "image": "italy.jpg",
+        "description": "Explore Rome, Venice, and Florence"
+    },
+    {
+        "code": "JP01",
+        "name": "Japan",
+        "length": "7 days",
+        "start": "2026-07-10",
+        "resort": "Tokyo Central Resort",
+        "perPerson": "2799",
+        "image": "japan.jpg",
+        "description": "Experience Tokyo and Kyoto"
+    },
+    {
+        "code": "PR01",
+        "name": "Puerto Rico",
+        "length": "5 days",
+        "start": "2026-08-05",
+        "resort": "San Juan Beach Resort",
+        "perPerson": "1899",
+        "image": "puertorico.jpg",
+        "description": "Enjoy beaches and culture"
+    }
+]
